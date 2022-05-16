@@ -1,0 +1,4 @@
+shrd [rsp], rcx, 0x41 | H¨$A
+shld [rsp], rcx, 0x41 | H§$A
+xadd [rsp], rcx | H¡$
+fnclex  | €‚

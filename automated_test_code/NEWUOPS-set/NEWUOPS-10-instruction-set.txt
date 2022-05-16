@@ -1,0 +1,9 @@
+maskmovdqu xmm0, xmm1 | f÷Á
+emms  | w
+div bl | öó
+div bx | f÷ó
+bt [rsp], rcx | H£$
+idiv ebx | ÷û
+lock cmpxchg [rsp], rcx | ðH±$
+div ebx | ÷ó
+idiv bx | f÷û

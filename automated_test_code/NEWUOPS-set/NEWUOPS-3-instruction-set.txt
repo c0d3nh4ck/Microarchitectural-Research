@@ -1,0 +1,56 @@
+pextrq [rsp], xmm1, 0x41 | fH:$A
+pextrd [rsp], xmm1, 0x41 | f:$A
+mul ebx | ÷ã
+pextrw [rsp], xmm1, 0x41 | f:$A
+pextrb [rsp], xmm1, 0x41 | f:$A
+ror rbx, cl | HÓË
+rol rbx, cl | HÓÃ
+shr rbx, cl | HÓë
+shl rbx, cl | HÓã
+sar rbx, cl | HÓû
+call rbx | ÿÓ
+extractps [rsp], xmm1, 0x41 | f:$A
+imul ebx | ÷ë
+packuswb xmm0, xmm1 | fgÁ
+vpmaskmovq [rsp], xmm1, xmm2 | ÄâñŽ$
+roundss xmm0, [rsp], 0x41 | f:
+$A
+cld  | ü
+std  | ý
+packsswb xmm0, xmm1 | fcÁ
+lodsb  | ¬
+lodsw  | f­
+rcr rbx, 0x1 | HÑÛ
+rcl rbx, 0x1 | HÑÓ
+packsswb xmm0, [rsp] | fc$
+packuswb xmm0, [rsp] | fg$
+vpmaskmovd [rsp], xmm1, xmm2 | ÄâqŽ$
+fldcw [rsp] | Ù,$
+pop rsp | \
+fnstcw [rsp] | Ù<$
+cvtsd2ss xmm0, [rsp] | òZ$
+cvtpd2ps xmm0, [rsp] | fZ$
+dppd xmm0, xmm1, 0x41 | f:AÁA
+fnstsw [rsp] | Ý<$
+movbe rbx, [rsp] | H8ð$
+imul bx, [rsp], 0x41 | fk$A
+mpsadbw xmm0, [rsp], 0x41 | f:B$A
+ptest xmm0, [rsp] | f8$
+pcmpistrm xmm0, xmm1, 0x41 | f:bÁA
+aesimc xmm0, [rsp] | f8Û$
+mulx ebx, ecx, edx | ÄâsöÚ
+pcmpistri xmm0, xmm1, 0x41 | f:cÁA
+mulx rbx, rcx, [rsp] | Äâóö$
+movbe bx, [rsp] | f8ð$
+call rsp | ÿÔ
+bextr rbx, [rsp], rdx | Äâè÷$
+movbe [rsp], ecx | 8ñ$
+pop [rsp] | $
+cvtsi2ss xmm0, rcx | óH*Á
+movbe [rsp], cx | f8ñ$
+leave  | É
+vcvtps2ph [rsp], xmm1, 0x41 | Äãy$A
+push rsp | T
+push [rsp] | ÿ4$
+xlat  | ×
+xchg rbx, rcx | H‡Ë

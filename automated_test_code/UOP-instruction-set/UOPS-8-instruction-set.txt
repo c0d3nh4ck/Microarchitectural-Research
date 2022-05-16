@@ -1,0 +1,4 @@
+xchg rbx, [rsp] | H‡$
+lock add [rsp], rcx | ðH$
+pcmpestri xmm0, xmm1, 0x41 | f:aÁA
+pcmpestri xmm0, [rsp], 0x41 | f:a$A

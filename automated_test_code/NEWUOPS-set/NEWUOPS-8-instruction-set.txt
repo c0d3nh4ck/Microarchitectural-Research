@@ -1,0 +1,8 @@
+rcl rbx, 0x41 | H¡”A
+rcr rbx, 0x41 | H¡€A
+xchg rbx, [rsp] | Há$
+rcr rbx, cl | H”€
+rcl rbx, cl | H””
+lock add [rsp], rcx | H$
+pcmpestri xmm0, [rsp], 0x41 | f:a$A
+pcmpestri xmm0, xmm1, 0x41 | f:a¡A

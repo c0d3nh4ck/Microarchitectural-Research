@@ -1,0 +1,2 @@
+shrd [rsp], rcx, cl | H­$
+shld [rsp], rcx, cl | H¥$

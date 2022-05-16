@@ -1,0 +1,17 @@
+movbe [rsp], rcx | H8ñ$
+mfence  | ®ğ
+mulx ebx, ecx, [rsp] | Äâsö$
+shld rbx, rcx, cl | H¥Ë
+shrd rbx, rcx, cl | H­Ë
+call [rsp] | ÿ$
+pause  | ó
+pcmpistri xmm0, [rsp], 0x41 | f:c$A
+pcmpistrm xmm0, [rsp], 0x41 | f:b$A
+vdivpd xmm0, xmm1, [rsp] | Åñ^$
+dpps xmm0, xmm1, 0x41 | f:@ÁA
+dppd xmm0, [rsp], 0x41 | f:A$A
+vsqrtps xmm0, [rsp] | ÅøQ$
+vsqrtpd xmm0, [rsp] | ÅùQ$
+vzeroupper  | Åøw
+ldmxcsr [rsp] | ®$
+stmxcsr [rsp] | ®$

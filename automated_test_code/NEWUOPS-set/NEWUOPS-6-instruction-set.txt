@@ -1,0 +1,4 @@
+dpps xmm0, [rsp], 0x41 | f:@$A
+cmpxchg [rsp], rcx | H±$
+sbb [rsp], rcx | H$
+adc [rsp], rcx | H$

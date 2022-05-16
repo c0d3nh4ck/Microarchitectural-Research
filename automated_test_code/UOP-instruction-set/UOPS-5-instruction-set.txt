@@ -1,0 +1,2 @@
+xadd [rsp], rcx | HС$
+fnclex  | лт

@@ -1,0 +1,31 @@
+xchg rbx, rcx | H‡Ë
+xlat  | ×
+push [rsp] | ÿ4$
+push rsp | T
+pop rsp | \
+pop [rsp] | $
+movbe bx, [rsp] | f8ğ$
+movbe rbx, [rsp] | H8ğ$
+movbe [rsp], cx | f8ñ$
+movbe [rsp], ecx | 8ñ$
+imul bx, [rsp], 0x41 | fk$A
+mulx ebx, ecx, edx | ÄâsöÚ
+mulx rbx, rcx, [rsp] | Äâóö$
+bextr rbx, [rsp], rdx | Äâè÷$
+call rsp | ÿÔ
+call rbx | ÿÓ
+leave  | É
+fnstsw [rsp] | İ<$
+fldcw [rsp] | Ù,$
+fnstcw [rsp] | Ù<$
+mpsadbw xmm0, [rsp], 0x41 | f:B$A
+ptest xmm0, [rsp] | f8$
+pcmpistri xmm0, xmm1, 0x41 | f:cÁA
+pcmpistrm xmm0, xmm1, 0x41 | f:bÁA
+aesimc xmm0, [rsp] | f8Û$
+extractps [rsp], xmm1, 0x41 | f:$A
+cvtpd2ps xmm0, [rsp] | fZ$
+cvtsd2ss xmm0, [rsp] | òZ$
+cvtsi2ss xmm0, rcx | óH*Á
+vcvtps2ph [rsp], xmm1, 0x41 | Äãy$A
+dppd xmm0, xmm1, 0x41 | f:AÁA

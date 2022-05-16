@@ -1,0 +1,2 @@
+rdrand rbx | HÇó
+rdseed rbx | HÇû

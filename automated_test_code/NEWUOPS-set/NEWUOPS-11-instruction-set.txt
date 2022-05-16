@@ -1,0 +1,4 @@
+btr [rsp], rcx | H³$
+btc [rsp], rcx | H»$
+idiv bl | öû
+bts [rsp], rcx | H«$

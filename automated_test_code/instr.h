@@ -1,0 +1,1 @@
+#define INSTR_SET __asm__ volatile("mov rcx, 0x424242;mov rbx, 0x414141;mov rdx, 0x434343;push 0x666666;movsd xmm1, [rsp];push 0x444444;movsd xmm0, [rsp];push 0x555555;movsd xmm2, [rsp];lock xadd [rsp], rcx;pcmpestrm xmm0, xmm1, 0x41;pcmpestrm xmm0, [rsp], 0x41;");
